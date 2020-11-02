@@ -1,0 +1,4 @@
+student name: Hugo Bosma
+student number: 659150
+student class: INFVT1A
+URL student GitHub repository: https://github.com/Hugo-Bosma/httpdocs 
