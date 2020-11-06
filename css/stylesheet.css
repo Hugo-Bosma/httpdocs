@@ -308,6 +308,8 @@ th h2 {
 	text-indent: 2px;
 }
 
+
+
 #logo {
 	height: 70px;
 	width: 140px;
@@ -320,6 +322,7 @@ th h2 {
   }
   
   
+  
 @media screen and (max-width: 480px) {
 #headerpagina{
 	letter-spacing: 1px;
@@ -330,6 +333,8 @@ th h2 {
 	text-indent: 2px;
 }
 
+
+
 #logo {
 	height: 70px;
 	width: 140px;
@@ -338,4 +343,7 @@ th h2 {
 #logoplaatje{
 	height: 65px;
 	width: 175px;
- }
+}
+  }
+  
+  
