@@ -1,0 +1,296 @@
+#cookie-statement
+{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: #FFF;
+	background-color: #FA0;
+	opacity: 50%;
+	padding: 10px;
+	line-height: 5px;
+	width: 384px;
+	text-align: center;
+	z-index: 9999;
+}
+
+body{
+	background-color: #C8CCC9;
+}
+body >footer{
+	background-color: #110401;
+	margin: 0;
+	padding: 2px 0px;
+	color: #FFF;
+}
+
+.flexbox {
+	display: flex-container;
+	background-color: #C8CCC9;
+	margin: 0;
+	padding: 0;
+	align-content: start;
+}
+.gridbox {
+	display: grid;
+	background-color: #C8CCC9;
+	margin: 0;
+	padding: 0;
+}
+
+.flexcontent{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0;
+}
+
+.flexcontent > aside{
+	bottom: 65px;
+	right: 0;
+	width: 384px;
+	position: fixed;
+	flex-basis: 20%;
+	float: right;
+	background-color: #4F5150;
+	color: #FFF;
+	padding-left: 19px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.flexcontent > section {
+	flex-basis: 78%;
+	background-color: #B3B6B7;
+	padding-left: 19px;
+}
+
+#headerpagina
+{
+	background-color: #B3B6B7;
+	text-align: center;
+	line-height: 50px;
+	font-size: 25px;
+	height:170px;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+#navpagina
+{
+	background-color: #110401;
+	text-align: center;
+	line-height: 35px;
+	font-size: 20px;
+	color: #FFF;
+}
+nav > ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333
+}
+
+.navbar {
+	float: left;
+}
+#navbarcon {
+	float: right;
+}
+#navbarcon > a {
+	display: block;
+	color: #FFF;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#navbarcon > a:hover {
+	background-color: #000;
+}
+.navbar > a {
+	display: block;
+	color: #FFF;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+.navbar > a:hover {
+	background-color: #000;
+}
+#logo{
+	float: left;
+	height: 100px;
+	width: 200px;
+}
+.activenav {
+	background-color: #0BBB46;
+}
+
+.productimage {
+	float: right;
+	width: 450px;
+	height: 300px;
+}
+
+.products {
+	height: 320px;
+}
+.redenen{
+	line-height: 20px;
+	font-size: 20px;
+	height: 50px;
+}
+
+.flexvideo {
+	display: flex;
+	justify-content: center;
+}
+
+.link {
+	/*deze gaat in de product linkjes zodat niet ook de navigatiebalk de onderstaande hover en active en visited instellingen krijgen */
+}
+
+
+.link > a:visited {
+	color: #19932D ;
+}
+.link > a:hover {
+	color: #B225C2;
+}
+.link > a:active {
+	color: #19932D ;
+}
+#video {
+	width: 960px;
+	height: 600px;
+}
+
+.producttext {
+	height: 10px;
+}
+.productcopyright {
+	padding-top: 5px;
+}
+
+.gridcontainer {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas: 'article2 article1 article3'
+						'article2 article1 article3'
+						'article5 article1 article3'
+						'article5 article1 article3'
+						'article5 article1 article4'
+						'article5 article1 article4'
+						'article5 article1 article4'
+						'article5 article6 article6';
+}			
+
+.gridaside {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas: 'product1 product2 product3'
+						'product1 product2 product3';
+}			
+
+.article1 {
+	grid-area: article1;
+}
+
+.article2 {
+	grid-area: article2;
+}
+
+.article3 {
+	grid-area: article3;
+}
+
+.article4 {
+	grid-area: article4;
+}
+.article5 {
+	grid-area: article5;
+}
+.article6 {
+	grid-area: article6;
+}
+
+.product1{
+	grid-area: product1;
+}
+
+.product2{
+	grid-area: product2;
+}
+
+.product3{
+	grid-area: product3;
+}
+
+#data-artikel {
+	padding: 10px;
+	padding-top: 1px;
+}
+
+
+th {
+	background-color: #000;
+	color: #FFF;
+}
+tr > td, th {
+	border: 1px solid #000;
+	padding-right: 50px;
+}
+
+td > h3 {
+	padding-right: 50px;
+	margin: 0;
+}
+
+th > h2 {
+	padding-right: 40px;
+	text-align: left;
+	margin: 0;
+}
+
+.grideusolar {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas: 'tabel tabel aside'
+						'tabel tabel aside'
+						'tabel tabel aside'
+						'tabel tabel aside'
+						'tabel tabel aside'
+						'tabel tabel aside';
+}
+
+.tabelgrid {
+	grid-area: tabel;
+	margin: 10px;
+}
+
+.gridaside-eu {
+	grid-area: aside;
+	display: block;
+}
+
+.eufigure{
+	width: 270px;
+	height: 180px;
+	margin-bottom: 100px;
+	margin-left: 1px;
+	margin-right: 50px;
+	padding: 0;
+}
+
+.gridaside > p {
+	margin-left: 1px;
+	margin-right: 50px;
+	margin-top: 0;
+	padding: 0;
+}
+
+
+@media screen and (max-width: 1180px) {
+#headerpagina{
+	
+}
+  }
