@@ -1,20 +1,6 @@
-#cookie-statement
-{
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	color: #FFF;
-	background-color: #FA0;
-	opacity: 50%;
-	padding: 10px;
-	line-height: 5px;
-	width: 384px;
-	text-align: center;
-	z-index: 9999;
-}
-
 body{
 	background-color: #C8CCC9;
+	font-family: "Arial", "Helvetica", "sans-serif";
 }
 body >footer{
 	background-color: #110401;
@@ -92,6 +78,11 @@ nav > ul
 	background-color: #333
 }
 
+#headerpagina > h1:first-letter{
+	font-size: 125%;
+	color: #997a00
+}
+
 .navbar {
 	float: left;
 }
@@ -138,8 +129,26 @@ nav > ul
 	height: 300px;
 }
 
+#cookie-statement
+{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: #FFF;
+	background-color: #FA0;
+	opacity: 50%;
+	padding: 10px;
+	line-height: 5px;
+	width: 384px;
+	text-align: center;
+	z-index: 9999;
+	font-family: notable;
+}
+
 .products {
-	height: 320px;
+	height: 420px;
+	border: 1px double #000;
+	padding: 5px;
 }
 .redenen{
 	line-height: 20px;
@@ -171,11 +180,23 @@ nav > ul
 	height: 600px;
 }
 
+
 .producttext {
-	height: 10px;
+	line-height: 5px;
+	height: 18px;
 }
 .productcopyright {
 	padding-top: 5px;
+}
+
+td:first-child{
+	background-color: #FF0 
+}
+tr:nth-child(2n+1){
+	background-color: #FFF;
+}
+tr:nth-child(2n){
+	background-color: #CFF;
 }
 
 .gridcontainer {
@@ -308,7 +329,15 @@ th h2 {
 	text-indent: 2px;
 }
 
-
+.productimage{
+	float: left;
+	width: 180px;
+	height: 120px;
+	position: relative;
+	right: 20px;
+	bottom: 10px;
+	
+}
 
 #logo {
 	height: 70px;
@@ -318,22 +347,111 @@ th h2 {
 #logoplaatje{
 	height: 65px;
 	width: 175px;
+}
+
+
+.producttext{
+	font-size: 0.9em;
+	line-height: 50px;
+	position: relative;
+	bottom: 25px;
+}
+.productcopyright{
+	position: relative;
+	top: 5px;
+}
+
+.products{
+	height: 420px;
+}
+h1{
+	font-size: 0.8em;
+}
+h2{
+	font-size: 0.8em;
+}
+h3{
+	font-size: 0.8em;
+}
+
+.flexcontent > aside{
+	width: 384px;
+	position: relative;
+	flex-basis: 100%;
+	float: right;
+	background-color: #4F5150;
+	color: #FFF;
+	padding-left: 5px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	order: 1;
+	font-size: 1.3em;
+}
+
+.redenen{
+	font-size: 0.9em;
+}
+
+.flexcontent > section {
+	flex-basis: 97%;
+	background-color: #B3B6B7;
+	padding-left: 19px;
+	flex-shrink: 1;
+	order: 2;
+	flex-grow: 0;
+}
+
+.flexvideo {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+	padding: 25px;
+}
+
+#video {
+	width: 540px;
+	height: 270px;
+}
+
+#cookie-statement{
+	width: 250px;
 }
   }
   
   
   
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
 #headerpagina{
 	letter-spacing: 1px;
 	word-spacing: 2px;
 	font-size: 10px;
-	line-height: 30px;
+	line-height: 20px;
 	height: 100px;	
 	text-indent: 2px;
+	/* word-indent bestaat niet of pakt hij niet, maar staat wel in de opdracht, kan hem ook niet op google vinden dan krijg ik text-indent steeds dus die heb ik gepakt */
 }
 
+#video{
+	display: none;
+}
 
+.flexvideo {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	padding: 20px;
+}
+
+#video {
+	width: 540px;
+	height: 270px;
+}
+
+.productimage{
+	float: left;
+	width: 180px;
+	height: 120px;
+}
 
 #logo {
 	height: 70px;
@@ -343,6 +461,20 @@ th h2 {
 #logoplaatje{
 	height: 65px;
 	width: 175px;
+}
+
+h1{
+	font-size: 0.5rem;
+}
+h2{
+	font-size: 0.5rem;
+}
+h3{
+	font-size: 0.5rem;
+}
+
+#cookie-statement{
+	width: 150px;
 }
   }
   
