@@ -60,6 +60,8 @@ body >footer{
 	flex-basis: 78%;
 	background-color: #B3B6B7;
 	padding-left: 19px;
+	flex-shrink: 1;
+	flex-grow: 0;
 }
 
 #headerpagina
@@ -120,6 +122,11 @@ nav > ul
 	float: left;
 	height: 100px;
 	width: 200px;
+}
+
+#logoplaatje{
+	height: 150px;
+	width: 400px;
 }
 .activenav {
 	background-color: #0BBB46;
@@ -236,16 +243,18 @@ th {
 	color: #FFF;
 }
 tr > td, th {
-	border: 1px solid #000;
+	border-width: 1px;
+	border-color: #000;
+	border-style: double;
 	padding-right: 50px;
 }
 
-td > h3 {
+td h3 {
 	padding-right: 50px;
 	margin: 0;
 }
 
-th > h2 {
+th h2 {
 	padding-right: 40px;
 	text-align: left;
 	margin: 0;
@@ -289,8 +298,44 @@ th > h2 {
 }
 
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1179px) {
 #headerpagina{
-	
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-size: 15px;
+	line-height: 30px;
+	height: 100px;	
+	text-indent: 2px;
+}
+
+#logo {
+	height: 70px;
+	width: 140px;
+}
+
+#logoplaatje{
+	height: 65px;
+	width: 175px;
 }
   }
+  
+  
+@media screen and (max-width: 480px) {
+#headerpagina{
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-size: 10px;
+	line-height: 30px;
+	height: 100px;	
+	text-indent: 2px;
+}
+
+#logo {
+	height: 70px;
+	width: 140px;
+}
+
+#logoplaatje{
+	height: 65px;
+	width: 175px;
+ }
