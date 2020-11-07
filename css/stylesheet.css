@@ -9,14 +9,14 @@ body >footer{
 	color: #FFF;
 }
 
-.flexbox {
+.flexbox-main {
 	display: flex-container;
 	background-color: #C8CCC9;
 	margin: 0;
 	padding: 0;
-	align-content: start;
-}
-.gridbox {
+} /* dit is omdat we een flexbox voor de indexpagina moeten hebben... als ik de display op flex zet, is het allemaal verpest, dus moet het zo laten, maar er is wel een error op de css validator.*/
+
+.gridboxmain {
 	display: grid;
 	background-color: #C8CCC9;
 	margin: 0;
@@ -80,7 +80,7 @@ nav > ul
 
 #headerpagina > h1:first-letter{
 	font-size: 125%;
-	color: #997a00
+	color: #997a00;
 }
 
 .navbar {
@@ -143,6 +143,7 @@ nav > ul
 	text-align: center;
 	z-index: 9999;
 	font-family: notable;
+	text-transform: uppercase;
 }
 
 .products {
@@ -201,7 +202,8 @@ tr:nth-child(2n){
 
 .gridcontainer {
 	display: grid;
-	grid-gap: 5px;
+	padding-left: 10px;
+	padding-top: 10px;
 	grid-template-areas: 'article2 article1 article3'
 						'article2 article1 article3'
 						'article5 article1 article3'
@@ -209,36 +211,57 @@ tr:nth-child(2n){
 						'article5 article1 article4'
 						'article5 article1 article4'
 						'article5 article1 article4'
-						'article5 article6 article6';
+						'article5 article6 article6'
+						'aside aside aside';
 }			
 
 .gridaside {
 	display: grid;
 	grid-gap: 5px;
+	grid-area: aside;
 	grid-template-areas: 'product1 product2 product3'
 						'product1 product2 product3';
 }			
 
 .article1 {
 	grid-area: article1;
+	border: 2px solid #000;
+	padding-right: 4px;
+	padding-left: 4px;
 }
 
 .article2 {
 	grid-area: article2;
+	border: 2px solid #000;
+	padding-right: 4px;
+	padding-left: 4px;
 }
 
 .article3 {
 	grid-area: article3;
+	border: 2px solid #000;
+	padding-right: 4px;
+	padding-left: 4px;
 }
 
 .article4 {
 	grid-area: article4;
+	border: 2px solid #000;
+	padding-right: 4px;
+	padding-left: 4px;
 }
 .article5 {
 	grid-area: article5;
+	border: 2px solid #000;
+	padding-right: 4px;
+	padding-left: 4px;
 }
+
 .article6 {
 	grid-area: article6;
+	border: 2px solid #000;
+	padding-right: 4px;
+	padding-left: 4px;
 }
 
 .product1{
@@ -265,7 +288,7 @@ th {
 }
 tr > td, th {
 	border-width: 1px;
-	border-color: #000;
+	border-color: #001;
 	border-style: double;
 	padding-right: 50px;
 }
@@ -304,11 +327,45 @@ th h2 {
 
 .eufigure{
 	width: 270px;
-	height: 180px;
+	height: 150px;
 	margin-bottom: 100px;
 	margin-left: 1px;
 	margin-right: 50px;
 	padding: 0;
+}
+#SMASTP{
+	height: 400px;
+	width: 360px;
+	left: 50px;
+	position: relative;
+	
+}
+
+#blueOmvormer{
+	height: 400px;
+	width: 270px;
+	left: 100px;
+	position: relative;
+}
+
+#accu{
+	height: 400px;
+	width: 450px;
+}
+
+#omvormer{
+	width: 270px;
+	height: 140px;
+}
+
+#multi-omvormer{
+	width: 200px;
+	height: 250px;
+}
+
+#alles {
+	width: 140px;
+	height: 350px;
 }
 
 .gridaside > p {
@@ -416,6 +473,33 @@ h3{
 #cookie-statement{
 	width: 250px;
 }
+
+.grideusolar{
+}
+
+.gridcontainer{
+}
+
+#SMASTP{
+	height: 200px;
+	width: 180px;
+	left: 50px;
+	position: relative;
+	
+}
+
+#blueOmvormer{
+	height: 200px;
+	width: 135px;
+	left: 50px;
+	position: relative;
+}
+
+#accu{
+	height: 200px;
+	width: 225px;
+}
+
   }
   
   
@@ -429,10 +513,6 @@ h3{
 	height: 100px;	
 	text-indent: 2px;
 	/* word-indent bestaat niet of pakt hij niet, maar staat wel in de opdracht, kan hem ook niet op google vinden dan krijg ik text-indent steeds dus die heb ik gepakt */
-}
-
-#video{
-	display: none;
 }
 
 .flexvideo {
