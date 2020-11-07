@@ -375,6 +375,26 @@ th h2 {
 	padding: 0;
 }
 
+.gridcon {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas: 'form form asidecon'
+						'form form asidecon'
+						'form form asidecon'
+						'form form asidecon'
+						'form form asidecon'
+						'form form asidecon';
+}
+
+.asidecon{
+	grid-area: asidecon;
+	display: block;
+}
+
+.form{
+	grid-area: form;
+}
+
 
 @media screen and (max-width: 1179px) {
 #headerpagina{
@@ -385,6 +405,18 @@ th h2 {
 	height: 100px;	
 	text-indent: 2px;
 }
+
+.gridcon {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas: 'form asidecon'
+						'form asidecon'
+						'form asidecon'
+						'form asidecon'
+						'form asidecon'
+						'form asidecon';
+}
+
 
 .productimage{
 	float: left;
@@ -474,7 +506,8 @@ h3{
 	width: 250px;
 }
 
-.grideusolar{
+.tabelgrid{
+	width: 700px;
 }
 
 .gridcontainer{
@@ -483,7 +516,7 @@ h3{
 #SMASTP{
 	height: 200px;
 	width: 180px;
-	left: 50px;
+	left: 25px;
 	position: relative;
 	
 }
@@ -495,9 +528,51 @@ h3{
 	position: relative;
 }
 
+
+.gridcontainer {
+	display: grid;
+	padding-left: 10px;
+	padding-top: 10px;
+	grid-template-areas: 'article1 article2'
+						'article1 article2'
+						'article3 article2'
+						'article3 article5'
+						'article3 article5'
+						'article3 article5'
+						'article6 article6'
+						'article6 article6'
+						'aside aside';
+}			
+.article4{
+	display: none;
+}
+
+.gridaside {
+	display: grid;
+	grid-gap: 5px;
+	grid-area: aside;
+	grid-template-areas: 'product1 product2'
+						'product1 product2';
+}	
+
+.product3{
+	display: none;
+}
+
 #accu{
-	height: 200px;
-	width: 225px;
+	display: none;
+}
+
+#navpagina{
+	background-color: #110401;
+	text-align: center;
+	line-height: 30px;
+	font-size: 11px;
+	color: #FFF;
+}
+#navbarcon{
+	float: left;
+}
 }
 
   }
@@ -513,6 +588,84 @@ h3{
 	height: 100px;	
 	text-indent: 2px;
 	/* word-indent bestaat niet of pakt hij niet, maar staat wel in de opdracht, kan hem ook niet op google vinden dan krijg ik text-indent steeds dus die heb ik gepakt */
+}
+#navpagina{
+	background-color: #110401;
+	text-align: center;
+	line-height: 25px;
+	font-size: 10px;
+	color: #FFF;
+}
+#navbarcon{
+	float: left;
+}
+
+#SMASTP{
+	height: 150px;
+	width: 135px;
+	left: 5px;
+	position: relative;
+	
+}
+
+.gridcon {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas: 'form form'
+						'form form'
+						'form form'
+						'form form'
+						'form form'
+						'form form'
+						'asidecon asidecon'
+						'asidecon asidecon'
+						'asidecon asidecon';
+}
+
+#blueOmvormer{
+	height: 150px;
+	width: 100px;
+	left: 10px;
+	position: relative;
+}
+
+.gridcontainer {
+	display: grid;
+	padding-left: 10px;
+	padding-top: 10px;
+	grid-template-areas: 'article5 article5'
+						'article5 article5'
+						'article5 article5'
+						'article3 article3'
+						'article3 article3'
+						'article3 article3'
+						'article2 article2'
+						'article2 article2'
+						'article2 article2'
+						'article1 article1'
+						'article1 article1'
+						'article1 article1'
+						'aside aside';
+}			
+.article4{
+	display: none;
+}
+.article6{
+	display: none;
+}
+
+.gridaside {
+	display: grid;
+	grid-gap: 5px;
+	grid-area: aside;
+	grid-template-areas: 'product1 product1'
+						'product2 product2'
+						'product3 product3';
+}	
+
+#accu{
+	height: 150px;
+	width: 169px;
 }
 
 .flexvideo {
