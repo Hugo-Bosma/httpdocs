@@ -325,14 +325,54 @@ th h2 {
 	display: block;
 }
 
-.eufigure{
+.eufigure1{
 	width: 270px;
 	height: 150px;
 	margin-bottom: 100px;
 	margin-left: 1px;
 	margin-right: 50px;
 	padding: 0;
+	grid-area: eufig1;
+	display: block;
 }
+
+.eufigure2{
+	width: 270px;
+	height: 150px;
+	margin-bottom: 100px;
+	margin-left: 1px;
+	margin-right: 50px;
+	padding: 0;
+	grid-area: eufig2;
+	display: block;
+}
+
+.eufigure3{
+	width: 270px;
+	height: 250px;
+	margin-bottom: 100px;
+	margin-left: 1px;
+	margin-right: 50px;
+	padding: 0;
+	grid-area: eufig3;
+	display: block;
+}
+
+#eu1{
+	display: block;
+	grid-area: eu1;
+}
+
+#eu2{
+	display: block;
+	grid-area: eu2;
+}
+
+#eu3{
+	display: block;
+	grid-area: eu3;
+}
+
 #SMASTP{
 	height: 400px;
 	width: 360px;
@@ -396,7 +436,7 @@ th h2 {
 }
 
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 1179px){
 #headerpagina{
 	letter-spacing: 1px;
 	word-spacing: 2px;
@@ -404,6 +444,49 @@ th h2 {
 	line-height: 30px;
 	height: 100px;	
 	text-indent: 2px;
+}
+
+.asidecon #omvormer{
+	height: 100px;
+	width: 150px;
+}
+
+.asidecon #multi-omvormer{
+	height: 180px;
+	width: 120px;
+}
+
+.asidecon #alles{
+	height: 230px;
+	width: 120px;
+}
+
+#eu1{
+	display: none;
+}
+
+.grideusolar {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas: 'tabel tabel'
+						'tabel tabel'
+						'tabel tabel'
+						'tabel tabel'
+						'tabel tabel'
+						'tabel tabel'
+						'aside aside'
+						'aside aside';
+}
+
+.gridaside-eu {
+	grid-area: aside;
+	float: left;
+	grid-template-areas: 'eu2 eu3'
+						'eufig2 eufig3';					
+}
+
+.eufigure1{
+	display: none;
 }
 
 .gridcon {
@@ -506,13 +589,6 @@ h3{
 	width: 250px;
 }
 
-.tabelgrid{
-	width: 700px;
-}
-
-.gridcontainer{
-}
-
 #SMASTP{
 	height: 200px;
 	width: 180px;
@@ -574,8 +650,6 @@ h3{
 	float: left;
 }
 }
-
-  }
   
   
   
@@ -599,6 +673,31 @@ h3{
 #navbarcon{
 	float: left;
 }
+
+.grideusolar {
+	display: grid;
+	grid-gap: 5px;
+	grid-template-areas: 'tabel tabel'
+						'tabel tabel'
+						'tabel tabel'
+						'tabel tabel'
+						'tabel tabel'
+						'aside aside'
+						'aside aside'
+						'aside aside';
+}
+
+.gridaside-eu {
+	grid-area: aside;
+	float: left;
+	grid-template-areas: 'eu1 eu1'
+						'eufig1 eufig1'
+						'eu2 eu2'
+						'eufig2 eufig2'
+						'eu3 eu3'
+						'eufig3 eufig3';					
+}
+
 
 #SMASTP{
 	height: 150px;
