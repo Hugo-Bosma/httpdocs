@@ -2,3 +2,6 @@ student name: Hugo Bosma
 student number: 659150
 student class: INFVT1A
 URL student GitHub repository: https://github.com/Hugo-Bosma/httpdocs 
+
+korte evaluatie (als u dit leest): Ik weet niet wat er fout gaat, maar de mobile size doet raar, eerst werkte het niet, toen deels, toen weer niet.
+Ik heb eigenlijk te weinig tijd het nog goed te maken, en ben bang heel veel aan te moeten passen dus laat het maar zo, opzich zien de pagina's er wel gewoon goed uit.

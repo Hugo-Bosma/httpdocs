@@ -29,6 +29,14 @@ body >footer{
 	margin-bottom: 0;
 }
 
+#figcap{
+	position: relative;
+	bottom: 75px;
+	color: #FFF
+}
+
+
+
 .flexcontent > aside{
 	bottom: 65px;
 	right: 0;
@@ -80,7 +88,7 @@ nav > ul
 
 #headerpagina > h1:first-letter{
 	font-size: 125%;
-	color: #997a00;
+	color: #FFC72B;
 }
 
 .navbar {
@@ -285,8 +293,9 @@ tr:nth-child(2n){
 th {
 	background-color: #000;
 	color: #FFF;
+	font-size: 1.5em;
 }
-tr > td, th {
+tr + td, th {
 	border-width: 1px;
 	border-color: #001;
 	border-style: double;
@@ -325,51 +334,15 @@ th h2 {
 	display: block;
 }
 
-.eufigure1{
-	width: 270px;
-	height: 150px;
-	margin-bottom: 100px;
-	margin-left: 1px;
-	margin-right: 50px;
-	padding: 0;
-	grid-area: eufig1;
-	display: block;
-}
-
-.eufigure2{
-	width: 270px;
-	height: 150px;
-	margin-bottom: 100px;
-	margin-left: 1px;
-	margin-right: 50px;
-	padding: 0;
-	grid-area: eufig2;
-	display: block;
-}
-
-.eufigure3{
-	width: 270px;
-	height: 250px;
-	margin-bottom: 100px;
-	margin-left: 1px;
-	margin-right: 50px;
-	padding: 0;
-	grid-area: eufig3;
-	display: block;
-}
-
 #eu1{
-	display: block;
 	grid-area: eu1;
 }
 
 #eu2{
-	display: block;
 	grid-area: eu2;
 }
 
 #eu3{
-	display: block;
 	grid-area: eu3;
 }
 
@@ -428,7 +401,7 @@ th h2 {
 
 .asidecon{
 	grid-area: asidecon;
-	display: block;
+	
 }
 
 .form{
@@ -447,23 +420,72 @@ th h2 {
 }
 
 .asidecon #omvormer{
-	height: 100px;
-	width: 150px;
+	height: 84px;
+	width: 125px;
 }
 
 .asidecon #multi-omvormer{
-	height: 180px;
-	width: 120px;
+	height: 150px;
+	width: 100px;
 }
+
+#multi-omvormer{
+	width: 200px;
+	height: 280px;
+}
+
 
 .asidecon #alles{
-	height: 230px;
-	width: 120px;
+	height: 150px;
+	width: 80px;
 }
 
-#eu1{
+
+.gridaside-eu #alles{
 	display: none;
 }
+
+#eu3{
+	display: none;
+}
+
+#conprod3{
+	grid-area: conprod3;
+}
+
+#conprod2{
+	grid-area: conprod2;
+}
+
+#conprod1{
+	grid-area: conprod1;
+}
+
+.gridcontainer {
+	display: grid;
+	padding-left: 10px;
+	padding-top: 10px;
+	grid-template-areas: 'article1 article2'
+						'article1 article2'
+						'article3 article2'
+						'article3 article5'
+						'article3 article5'
+						'article3 article5'
+						'article6 article6'
+						'article6 article6'
+						'aside aside';
+}			
+.article4{
+	display: none;
+}
+
+.gridaside {
+	display: grid;
+	grid-gap: 5px;
+	grid-area: aside;
+	grid-template-areas: 'product1 product2'
+						'product1 product2';
+}	
 
 .grideusolar {
 	display: grid;
@@ -474,15 +496,14 @@ th h2 {
 						'tabel tabel'
 						'tabel tabel'
 						'tabel tabel'
-						'aside aside'
 						'aside aside';
 }
 
 .gridaside-eu {
 	grid-area: aside;
-	float: left;
-	grid-template-areas: 'eu2 eu3'
-						'eufig2 eufig3';					
+	display: grid;
+	grid-template-areas: 'eu1 eu2'
+						'eu1 eu2';					
 }
 
 .eufigure1{
@@ -500,6 +521,14 @@ th h2 {
 						'form asidecon';
 }
 
+.asidecon{
+	grid-template-areas: 'conprod1'
+						'conprod1'
+						'conprod2'
+						'conprod2'
+						'conprod3'
+						'conprod3';
+}
 
 .productimage{
 	float: left;
@@ -605,32 +634,6 @@ h3{
 }
 
 
-.gridcontainer {
-	display: grid;
-	padding-left: 10px;
-	padding-top: 10px;
-	grid-template-areas: 'article1 article2'
-						'article1 article2'
-						'article3 article2'
-						'article3 article5'
-						'article3 article5'
-						'article3 article5'
-						'article6 article6'
-						'article6 article6'
-						'aside aside';
-}			
-.article4{
-	display: none;
-}
-
-.gridaside {
-	display: grid;
-	grid-gap: 5px;
-	grid-area: aside;
-	grid-template-areas: 'product1 product2'
-						'product1 product2';
-}	
-
 .product3{
 	display: none;
 }
@@ -689,13 +692,10 @@ h3{
 
 .gridaside-eu {
 	grid-area: aside;
-	float: left;
-	grid-template-areas: 'eu1 eu1'
-						'eufig1 eufig1'
+	display: grid;
+	grid-template-areas: 'eu1 eu1'						
 						'eu2 eu2'
-						'eufig2 eufig2'
-						'eu3 eu3'
-						'eufig3 eufig3';					
+						'eu3 eu3';					
 }
 
 
@@ -719,6 +719,12 @@ h3{
 						'asidecon asidecon'
 						'asidecon asidecon'
 						'asidecon asidecon';
+}
+
+.asidecon{
+	grid-template-areas: 'conprod1 conprod1'
+						'conprod2 conprod2'
+						'conprod3 conprod3';
 }
 
 #blueOmvormer{
